@@ -17,11 +17,6 @@ import pdfplumber
 
 import pandas as pd
 
-import tempfile
-import sqlite3
-
-
-
 def load_document(
     file: str,
     file_name,

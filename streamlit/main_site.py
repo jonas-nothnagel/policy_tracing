@@ -16,7 +16,6 @@ import streamlit as st
 import pandas as pd 
 
 import tempfile
-import sqlite3
 
 def app():
 
@@ -52,7 +51,7 @@ def app():
                 temp.write(bytes_data)
             
                 st.write("Filename: ", file.name)
-                
+
                 # load document
                 docs = pre.load_document(temp.name, file)
 
